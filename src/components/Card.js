@@ -13,4 +13,3 @@ const Card = ({ title, image }) => {
 
 export default Card;
 
-<h1>huaddhajdkhaui</h1>
