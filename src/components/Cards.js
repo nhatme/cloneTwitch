@@ -5,7 +5,19 @@ import chatting from '../assets/chatting.jpg'
 
 const Cards = () => {
     const cards = [
-        { title: "Let's talk", image: chatting },
+        { title: "Let's talk", image: tv },
+        { title: "Video Games", image: tv },
+        { title: "Let's talk", image: tv },
+        { title: "Let's talk", image: tv },
+        { title: "Let's talk", image: tv },
+
+        { title: "Let's talk", image: tv },
+        { title: "Video Games", image: tv },
+        { title: "Let's talk", image: tv },
+        { title: "Let's talk", image: tv },
+        { title: "Let's talk", image: tv },
+
+        { title: "Let's talk", image: tv },
         { title: "Video Games", image: tv },
         { title: "Let's talk", image: tv },
         { title: "Let's talk", image: tv },
@@ -28,7 +40,7 @@ const Cards = () => {
             </div>
             {/* Cards */}
             <div className='grid grid-cols-2 md:grid-cols-3
-            lg:grid-cols-5'>
+            lg:grid-cols-5 xl:grid-cols-5 pt-5 gap-12'>
                 {cards.map((card) => (
                     <Card title={card.title} image={card.image} />
                 ))}
