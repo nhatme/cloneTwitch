@@ -1,7 +1,16 @@
 import React from 'react';
+import Card from './Card'
+import tv from '../assets/tv.jpg'
+import chatting from '../assets/chatting.jpg'
 
 const Cards = () => {
-    const cards = [{title:''}]
+    const cards = [
+        { title: "Let's talk", image: chatting },
+        { title: "Video Games", image: tv },
+        { title: "Let's talk", image: tv },
+        { title: "Let's talk", image: tv },
+        { title: "Let's talk", image: tv }
+    ];
     return (
         <div>
             {/* Title */}
@@ -13,12 +22,17 @@ const Cards = () => {
             {/* Filter */}
             <div className='flex items-center pt-2'>
                 <p className='font-bold pt-2'>Search by category</p>
-                <input type='search' 
-                className='ml-4 outline-0 bg-[#e9e7e7]
-                p-2 rounded-full pl-4' placeholder='Search by category'/>
+                <input type='search'
+                    className='ml-4 outline-0 bg-[#e9e7e7]
+                p-2 rounded-full pl-4' placeholder='Search by category' />
             </div>
             {/* Cards */}
-            <div className=''></div>
+            <div className='grid grid-cols-2 md:grid-cols-3
+            lg:grid-cols-5'>
+                {cards.map((card) => (
+                    <Card title={card.title} image={card.image} />
+                ))}
+            </div>
         </div>
     );
 };

@@ -39,7 +39,7 @@ const Explore = () => {
             {/* Title */}
             <h1 className='text-[55px] font-bold'>Explore</h1>
             {/* Categories */}
-            <div className='flex flex-wrap gap-[1.2rem]'>
+            <div className='flex flex-wrap gap-x-5 sm:gap-x-13 gap-y-5'>
                 {categories.map((category) => (
                     <Category
                         title={category.title}
