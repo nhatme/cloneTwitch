@@ -23,6 +23,4 @@ const Cards = () => {
     );
 };
 
-<h1> hiahidahhahdeao</h1>
-
 export default Cards;
