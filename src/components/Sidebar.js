@@ -1,27 +1,33 @@
 import React from 'react'
-import tv from '../assets/tv.jpg'
 import { GrChannel } from 'react-icons/gr'
 import Channel from './Channel'
+import lmht from '../assets/lmht.jpg'
+import lmht2 from '../assets/lmht2.webp'
+import lmht3 from '../assets/lmht3.jpg'
+import lmht4 from '../assets/lmht4.jpg'
+import lmht5 from '../assets/lmht5.jpeg'
+import lmht6 from '../assets/lmht6.jpg'
+import lmht7 from '../assets/lmht7.jpg'
+import lmht8 from '../assets/lmht8.webp'
+
 
 
 const Sidebar = () => {
   const channels = [
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
-    { profile: tv, name: "Nhat's Dev" },
+    { profile: lmht, name: "Nhat's Dev" },
+    { profile: lmht2, name: "Nhat's Dev" },
+    { profile: lmht3, name: "Nhat's Dev" },
+    { profile: lmht4, name: "Nhat's Dev" },
+    { profile: lmht5, name: "Nhat's Dev" },
+    { profile: lmht6, name: "Nhat's Dev" },
+    { profile: lmht7, name: "Nhat's Dev" },
+    { profile: lmht8, name: "Nhat's Dev" }
   ];
 
   return (
-    <div className='bg-[#e9e7e7] p-2'>
+    <div className='bg-[#e9e7e7] p-2 border-r'>
       {/* Title */}
-      <div className='whitespace-nowrap'>
+      <div className='whitespace-nowrap flex justify-center'>
         <p className='hidden lg:flex text-[15px] font-semibold'>
           RECOMMENDED CHANNELS
         </p>
