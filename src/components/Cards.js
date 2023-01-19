@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './Card'
 import tv from '../assets/tv.jpg'
-import chatting from '../assets/chatting.jpg'
 
 const Cards = () => {
     const cards = [
@@ -21,26 +20,32 @@ const Cards = () => {
         { title: "Video Games", image: tv },
         { title: "Let's talk", image: tv },
         { title: "Let's talk", image: tv },
-        { title: "Let's talk", image: tv }
+        { title: "Let's talk", image: tv },
+
+        { title: "Let's talk", image: tv },
+        { title: "Video Games", image: tv },
+        { title: "Let's talk", image: tv },
+        { title: "Let's talk", image: tv },
+        { title: "Let's talk", image: tv },
     ];
     return (
         <div>
             {/* Title */}
-            <div className='font-bold text-[20px] 
+            <div className='w-full font-bold text-[20px] 
         flex items-center pt-12 gap-x-6'>
                 <p className=''>Topics</p>
                 <p>Creators</p>
             </div>
             {/* Filter */}
             <div className='flex items-center pt-2'>
-                <p className='font-bold pt-2'>Search by category</p>
+                <p className='font-bold'>Search by category</p>
                 <input type='search'
                     className='ml-4 outline-0 bg-[#e9e7e7]
-                p-2 rounded-full pl-4' placeholder='Search by category' />
+                p-1.5 rounded-full pl-4' placeholder='Search by category' />
             </div>
             {/* Cards */}
-            <div className='grid grid-cols-2 md:grid-cols-3
-            lg:grid-cols-5 xl:grid-cols-5 pt-5 gap-12'>
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 
+            xxl:grid-cols-5 xxxl:grid-cols-6 4xl:grid-cols-7 pt-5 gap-4 pb-12'>
                 {cards.map((card) => (
                     <Card title={card.title} image={card.image} />
                 ))}
@@ -50,3 +55,4 @@ const Cards = () => {
 };
 
 export default Cards;
+ 

@@ -5,7 +5,7 @@ import Explore from './Explore';
 
 const Main = () => {
   return (
-    <div className='px-4 lg:px-7'>
+    <div className='w-full px-4 lg:px-7'>
         {/* Browse */}
         <Explore />
         {/* Cards */}

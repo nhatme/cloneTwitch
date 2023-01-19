@@ -25,10 +25,10 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className='bg-[#e9e7e7] p-2 border-r'>
+    <div className='sticky top-[56px] bg-[#e9e7e7] p-2 border-r h-full z-20'>
       {/* Title */}
       <div className='whitespace-nowrap flex justify-center'>
-        <p className='hidden lg:flex text-[15px] font-semibold'>
+        <p className='hidden lg:flex text-[13px] font-bold'>
           RECOMMENDED CHANNELS
         </p>
         <div className='lg:hidden'>

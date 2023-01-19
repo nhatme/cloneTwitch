@@ -9,7 +9,7 @@ function App() {
 
       {/* Navbar */}
       <Navbar />
-      <div className="flex">
+      <div className="flex ">
         {/* Sidebar */}
         <Sidebar />
         {/* Main */}

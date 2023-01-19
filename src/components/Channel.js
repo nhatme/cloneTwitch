@@ -8,12 +8,12 @@ const Channel = ({ profile, name }) => {
           <img src={profile} alt=''
             className='rounded-full object-cover h-full w-full' />
         </div>
-        <div className='hidden lg:flex flex-col text-[14px]'>
-          <p className='font-semibold pl-2 text-[14px]'>{name}</p>
+        <div className='hidden lg:flex flex-col pl-2'>
+          <p className='font-semibold text-[14px]'>{name}</p>
           <p className='text-[12px] truncate w-[90%]'>CsGO Just Chatting</p>
         </div>
       </div>
-      <div className='flex items-center'>
+      <div className='hidden lg:flex items-center'>
         <div className='w-2.5 h-2.5 bg-red-500 rounded-full mr-1'></div>
         <p className='text-[14px]'>15k</p>
       </div>

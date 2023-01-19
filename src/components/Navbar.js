@@ -6,8 +6,8 @@ import { BsThreeDotsVertical, BsSearch, BsFillInboxFill }
 
 const Navbar = () => {
     return (
-        <div className='bg-white py-[0.6rem] px-3 lg:px-8 flex items-center 
-        justify-between'>
+        <div className='sticky top-0 bg-white py-[0.6rem] px-3 lg:px-8 flex items-center 
+        justify-between z-20'>
             {/* Left Side */}
             <div className='flex items-center gap-5'>
                 <img src={logo} alt='' className='w-8 h-8'></img>
